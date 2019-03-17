@@ -22,7 +22,7 @@ public class OptionalInterfaceDemo {
     
     public Optional<Artist> getArtist(int index) {
       if(index < 0 || index >= artists.size()) {
-    	  return Optional.empty(); //if not  artist found returns the empty Optional instead of null
+    	  return Optional.empty(); //if no artist found returns the empty Optional instead of null
       }
       return Optional.of(artists.get(index));
     }
